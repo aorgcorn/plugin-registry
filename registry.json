@@ -9,7 +9,7 @@
       "version": "1.0.0",
       "capabilities": ["aiProvider", "settingsPanel"],
       "downloadURL": "https://github.com/aorgcorn/chorograph-opencode-server-plugin/releases/download/v1.0.0/ChorographOpenCodeServerPlugin.bundle.zip",
-      "sha256": "408e28358d8e2ed892f0fc2a462d89f062bdcf387d686b5542fa0a13f8deeb96",
+      "sha256": "f2fffd63dfb27b21afc8a4e166076ac9cf06a58df821ccab66c2669f49e862d5",
       "homepageURL": "https://github.com/aorgcorn/chorograph-opencode-server-plugin",
       "minChorographVersion": "1.0.0"
     },
@@ -21,7 +21,7 @@
       "version": "1.0.0",
       "capabilities": ["aiProvider", "settingsPanel"],
       "downloadURL": "https://github.com/aorgcorn/chorograph-gemini-cli-plugin/releases/download/v1.0.0/ChorographGeminiCLIPlugin.bundle.zip",
-      "sha256": "a4133a81b47916ff62115223b2dcad9cf393177aaac12dc8d6c2fcbec786313a",
+      "sha256": "d20f65663d5e2cf3b88b2ab155d754821a075d437a747485b0a4ceefccfcd602",
       "homepageURL": "https://github.com/aorgcorn/chorograph-gemini-cli-plugin",
       "minChorographVersion": "1.0.0"
     },
@@ -33,7 +33,7 @@
       "version": "1.0.0",
       "capabilities": ["aiProvider", "settingsPanel"],
       "downloadURL": "https://github.com/aorgcorn/chorograph-codex-cli-plugin/releases/download/v1.0.0/ChorographCodexCLIPlugin.bundle.zip",
-      "sha256": "ae5888626184ec45ce5f4b331797678a2c2ff46a9979ea56b3ff982d9189683b",
+      "sha256": "dcc300f0b600b90bf1c82c2fcdf78bce5125a910738df5ff5d5674ad2132ed1d",
       "homepageURL": "https://github.com/aorgcorn/chorograph-codex-cli-plugin",
       "minChorographVersion": "1.0.0"
     }
