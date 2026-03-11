@@ -21,7 +21,7 @@
       "version": "1.0.5",
       "capabilities": ["aiProvider", "settingsPanel"],
       "downloadURL": "https://github.com/aorgcorn/chorograph-gemini-cli-plugin/releases/download/v1.0.5/ChorographGeminiCLIPlugin.bundle.zip",
-      "sha256": "0e9f4bf7206247c50689b8cb5f929c7a85f31706b33f48a577512ae91f9b4466",
+      "sha256": "b34338fbf02e8458dafe862e58f4e12e51cf1531606384f8354f822d1f9f171a",
       "homepageURL": "https://github.com/aorgcorn/chorograph-gemini-cli-plugin",
       "minChorographVersion": "1.0.0"
     },
