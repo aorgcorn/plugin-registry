@@ -1,59 +1,41 @@
 {
-  "schemaVersion": "1.0",
+  "version": 1,
   "plugins": [
     {
       "id": "com.chorograph.plugin.opencode-server",
-      "name": "OpenCode Server",
+      "displayName": "OpenCode Server",
       "description": "AI provider plugin that connects to a running OpenCode server via its JSON-RPC/SSE API, streaming live file read/write events into the Chorograph visualiser.",
       "author": "aorgcorn",
-      "category": "ai-provider",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "minimumAppVersion": "1.0.0",
-          "downloadURL": "https://github.com/aorgcorn/chorograph-opencode-server-plugin/releases/download/v1.0.0/ChorographOpenCodeServerPlugin.bundle.zip",
-          "sha256": "408e28358d8e2ed892f0fc2a462d89f062bdcf387d686b5542fa0a13f8deeb96",
-          "releaseNotes": "Initial release."
-        }
-      ],
-      "repositoryURL": "https://github.com/aorgcorn/chorograph-opencode-server-plugin",
-      "iconURL": null
+      "version": "1.0.0",
+      "capabilities": ["aiProvider", "settingsPanel"],
+      "downloadURL": "https://github.com/aorgcorn/chorograph-opencode-server-plugin/releases/download/v1.0.0/ChorographOpenCodeServerPlugin.bundle.zip",
+      "sha256": "408e28358d8e2ed892f0fc2a462d89f062bdcf387d686b5542fa0a13f8deeb96",
+      "homepageURL": "https://github.com/aorgcorn/chorograph-opencode-server-plugin",
+      "minChorographVersion": "1.0.0"
     },
     {
       "id": "com.chorograph.plugin.gemini-cli",
-      "name": "Gemini CLI",
+      "displayName": "Gemini CLI",
       "description": "AI provider plugin that wraps the Gemini CLI tool, capturing its file-operation events and surfacing them in the Chorograph spatial visualiser.",
       "author": "aorgcorn",
-      "category": "ai-provider",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "minimumAppVersion": "1.0.0",
-          "downloadURL": "https://github.com/aorgcorn/chorograph-gemini-cli-plugin/releases/download/v1.0.0/ChorographGeminiCLIPlugin.bundle.zip",
-          "sha256": "a4133a81b47916ff62115223b2dcad9cf393177aaac12dc8d6c2fcbec786313a",
-          "releaseNotes": "Initial release."
-        }
-      ],
-      "repositoryURL": "https://github.com/aorgcorn/chorograph-gemini-cli-plugin",
-      "iconURL": null
+      "version": "1.0.0",
+      "capabilities": ["aiProvider", "settingsPanel"],
+      "downloadURL": "https://github.com/aorgcorn/chorograph-gemini-cli-plugin/releases/download/v1.0.0/ChorographGeminiCLIPlugin.bundle.zip",
+      "sha256": "a4133a81b47916ff62115223b2dcad9cf393177aaac12dc8d6c2fcbec786313a",
+      "homepageURL": "https://github.com/aorgcorn/chorograph-gemini-cli-plugin",
+      "minChorographVersion": "1.0.0"
     },
     {
       "id": "com.chorograph.plugin.codex-cli",
-      "name": "Codex CLI",
+      "displayName": "Codex CLI",
       "description": "AI provider plugin that wraps the OpenAI Codex CLI tool, parsing its shell output to extract file operations and displaying them in the Chorograph spatial visualiser.",
       "author": "aorgcorn",
-      "category": "ai-provider",
-      "versions": [
-        {
-          "version": "1.0.0",
-          "minimumAppVersion": "1.0.0",
-          "downloadURL": "https://github.com/aorgcorn/chorograph-codex-cli-plugin/releases/download/v1.0.0/ChorographCodexCLIPlugin.bundle.zip",
-          "sha256": "ae5888626184ec45ce5f4b331797678a2c2ff46a9979ea56b3ff982d9189683b",
-          "releaseNotes": "Initial release."
-        }
-      ],
-      "repositoryURL": "https://github.com/aorgcorn/chorograph-codex-cli-plugin",
-      "iconURL": null
+      "version": "1.0.0",
+      "capabilities": ["aiProvider", "settingsPanel"],
+      "downloadURL": "https://github.com/aorgcorn/chorograph-codex-cli-plugin/releases/download/v1.0.0/ChorographCodexCLIPlugin.bundle.zip",
+      "sha256": "ae5888626184ec45ce5f4b331797678a2c2ff46a9979ea56b3ff982d9189683b",
+      "homepageURL": "https://github.com/aorgcorn/chorograph-codex-cli-plugin",
+      "minChorographVersion": "1.0.0"
     }
   ]
 }
