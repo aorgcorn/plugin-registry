@@ -30,10 +30,10 @@
       "displayName": "Codex CLI",
       "description": "AI provider plugin that wraps the OpenAI Codex CLI tool, parsing its shell output to extract file operations and displaying them in the Chorograph spatial visualiser.",
       "author": "aorgcorn",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "capabilities": ["aiProvider", "settingsPanel"],
-      "downloadURL": "https://github.com/aorgcorn/chorograph-codex-cli-plugin/releases/download/v1.0.3/ChorographCodexCLIPlugin.bundle.zip",
-      "sha256": "93fea84a210d116a083283045e90984ef92e80b5f0105c335b62af8e3fe4540a",
+      "downloadURL": "https://github.com/aorgcorn/chorograph-codex-cli-plugin/releases/download/v1.0.4/ChorographCodexCLIPlugin.bundle.zip",
+      "sha256": "7169bd56da825045d62695f2940acc2e47d7e8de4d32c7b91a4b1e865c9690bd",
       "homepageURL": "https://github.com/aorgcorn/chorograph-codex-cli-plugin",
       "minChorographVersion": "1.0.0"
     }
