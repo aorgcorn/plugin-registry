@@ -33,7 +33,7 @@
       "version": "1.0.6",
       "capabilities": ["aiProvider", "settingsPanel"],
       "downloadURL": "https://github.com/aorgcorn/chorograph-codex-cli-plugin/releases/download/v1.0.6/ChorographCodexCLIPlugin.bundle.zip",
-      "sha256": "8939a9266e07182315295d502c89954ed8268a1516f7080584373281a9a283e4",
+      "sha256": "f64e3e8ffcd8a34a93729f5657dc305fd4604ae420b8a5cdc5e1b212bb1cf00c",
       "homepageURL": "https://github.com/aorgcorn/chorograph-codex-cli-plugin",
       "minChorographVersion": "1.0.0"
     }
