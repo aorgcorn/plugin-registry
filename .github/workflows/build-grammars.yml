@@ -1,0 +1,117 @@
+# build-grammars.yml
+#
+# Extracts highlights.scm query files from tree-sitter crate HIGHLIGHTS_QUERY
+# constants and commits them to grammars/<lang>/highlights.scm in this repo.
+#
+# Trigger: push of a tag matching v* (e.g. grammars-v1.0.0).
+# The committed .scm files are then served as raw GitHub URLs consumed by
+# GrammarManager.swift via the queryUrl fields in grammars.json.
+
+name: Build Grammar Queries
+
+on:
+  push:
+    tags:
+      - "grammars-v*"
+  workflow_dispatch:
+
+jobs:
+  build-grammars:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Cargo registry
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+          key: ${{ runner.os }}-cargo-grammars-${{ hashFiles('grammar-extractor/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-grammars-
+
+      - name: Write grammar extractor crate
+        run: |
+          mkdir -p grammar-extractor/src
+          cat > grammar-extractor/Cargo.toml << 'EOF'
+          [package]
+          name = "grammar-extractor"
+          version = "0.1.0"
+          edition = "2021"
+
+          [[bin]]
+          name = "grammar-extractor"
+          path = "src/main.rs"
+
+          [dependencies]
+          tree-sitter-swift      = "0.7.1"
+          tree-sitter-python     = "0.23"
+          tree-sitter-go         = "0.25.0"
+          tree-sitter-rust       = "0.23"
+          tree-sitter-typescript = "0.23.2"
+          tree-sitter-java       = "0.23.5"
+          tree-sitter-kotlin-ng  = "1.1.0"
+          tree-sitter-c-sharp    = "0.23.1"
+          EOF
+
+          cat > grammar-extractor/src/main.rs << 'EOF'
+          use std::collections::HashMap;
+          use std::fs;
+
+          fn main() {
+              // Languages that expose HIGHLIGHTS_QUERY directly.
+              let queries: HashMap<&str, &str> = [
+                  ("swift",      tree_sitter_swift::HIGHLIGHTS_QUERY),
+                  ("python",     tree_sitter_python::HIGHLIGHTS_QUERY),
+                  ("go",         tree_sitter_go::HIGHLIGHTS_QUERY),
+                  ("rust",       tree_sitter_rust::HIGHLIGHTS_QUERY),
+                  ("typescript", tree_sitter_typescript::HIGHLIGHTS_QUERY),
+                  ("java",       tree_sitter_java::HIGHLIGHTS_QUERY),
+                  // Kotlin and C# use local copies (see below).
+              ].into_iter().collect();
+
+              let kotlin_query  = include_str!("../../kotlin_highlights.scm");
+              let csharp_query  = include_str!("../../csharp_highlights.scm");
+
+              let mut all = queries;
+              all.insert("kotlin", kotlin_query);
+              all.insert("csharp", csharp_query);
+
+              for (lang, query) in &all {
+                  let dir = format!("grammars/{lang}");
+                  fs::create_dir_all(&dir).unwrap();
+                  fs::write(format!("{dir}/highlights.scm"), query).unwrap();
+                  println!("Wrote {dir}/highlights.scm ({} bytes)", query.len());
+              }
+          }
+          EOF
+
+      # Copy the two local .scm files so the extractor can include_str! them.
+      - name: Copy local query files
+        run: |
+          # These files live in the chorograph main repo.  For the registry CI
+          # we vendor them alongside the extractor crate.
+          # If you update them in the main repo, update these too.
+          cp grammars/kotlin/highlights.scm  grammar-extractor/kotlin_highlights.scm  2>/dev/null || \
+            echo "WARNING: grammars/kotlin/highlights.scm not found – using empty placeholder" && \
+            echo "" > grammar-extractor/kotlin_highlights.scm
+          cp grammars/csharp/highlights.scm  grammar-extractor/csharp_highlights.scm  2>/dev/null || \
+            echo "WARNING: grammars/csharp/highlights.scm not found – using empty placeholder" && \
+            echo "" > grammar-extractor/csharp_highlights.scm
+
+      - name: Build & run grammar extractor
+        run: cargo run --release --manifest-path grammar-extractor/Cargo.toml
+
+      - name: Commit updated grammar files
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add grammars/
+          git diff --cached --quiet && echo "No grammar changes." || \
+            git commit -m "chore: update grammar query files [skip ci]"
+          git push origin HEAD:main
