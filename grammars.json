@@ -43,5 +43,45 @@
     "languageId": "yaml",
     "displayName": "YAML",
     "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/yaml/highlights.scm"
+  },
+  {
+    "languageId": "json",
+    "displayName": "JSON",
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/json/highlights.scm"
+  },
+  {
+    "languageId": "css",
+    "displayName": "CSS",
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/css/highlights.scm"
+  },
+  {
+    "languageId": "html",
+    "displayName": "HTML",
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/html/highlights.scm"
+  },
+  {
+    "languageId": "ruby",
+    "displayName": "Ruby",
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/ruby/highlights.scm"
+  },
+  {
+    "languageId": "dockerfile",
+    "displayName": "Dockerfile",
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/dockerfile/highlights.scm"
+  },
+  {
+    "languageId": "bash",
+    "displayName": "Bash / Shell",
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/bash/highlights.scm"
+  },
+  {
+    "languageId": "c",
+    "displayName": "C",
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/c/highlights.scm"
+  },
+  {
+    "languageId": "cpp",
+    "displayName": "C++",
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/cpp/highlights.scm"
   }
 ]
