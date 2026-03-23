@@ -38,5 +38,10 @@
     "languageId": "csharp",
     "displayName": "C#",
     "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/csharp/highlights.scm"
+  },
+  {
+    "languageId": "yaml",
+    "displayName": "YAML",
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/yaml/highlights.scm"
   }
 ]
