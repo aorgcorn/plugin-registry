@@ -2,41 +2,41 @@
   {
     "languageId": "swift",
     "displayName": "Swift",
-    "queryUrl": "https://raw.githubusercontent.com/anomalyco/chorograph-plugin-registry/main/grammars/swift/highlights.scm"
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/swift/highlights.scm"
   },
   {
     "languageId": "python",
     "displayName": "Python",
-    "queryUrl": "https://raw.githubusercontent.com/anomalyco/chorograph-plugin-registry/main/grammars/python/highlights.scm"
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/python/highlights.scm"
   },
   {
     "languageId": "go",
     "displayName": "Go",
-    "queryUrl": "https://raw.githubusercontent.com/anomalyco/chorograph-plugin-registry/main/grammars/go/highlights.scm"
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/go/highlights.scm"
   },
   {
     "languageId": "rust",
     "displayName": "Rust",
-    "queryUrl": "https://raw.githubusercontent.com/anomalyco/chorograph-plugin-registry/main/grammars/rust/highlights.scm"
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/rust/highlights.scm"
   },
   {
     "languageId": "typescript",
     "displayName": "TypeScript / JavaScript",
-    "queryUrl": "https://raw.githubusercontent.com/anomalyco/chorograph-plugin-registry/main/grammars/typescript/highlights.scm"
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/typescript/highlights.scm"
   },
   {
     "languageId": "java",
     "displayName": "Java",
-    "queryUrl": "https://raw.githubusercontent.com/anomalyco/chorograph-plugin-registry/main/grammars/java/highlights.scm"
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/java/highlights.scm"
   },
   {
     "languageId": "kotlin",
     "displayName": "Kotlin",
-    "queryUrl": "https://raw.githubusercontent.com/anomalyco/chorograph-plugin-registry/main/grammars/kotlin/highlights.scm"
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/kotlin/highlights.scm"
   },
   {
     "languageId": "csharp",
     "displayName": "C#",
-    "queryUrl": "https://raw.githubusercontent.com/anomalyco/chorograph-plugin-registry/main/grammars/csharp/highlights.scm"
+    "queryUrl": "https://raw.githubusercontent.com/aorgcorn/plugin-registry/main/grammars/csharp/highlights.scm"
   }
 ]
