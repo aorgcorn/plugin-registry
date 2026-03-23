@@ -75,15 +75,15 @@ jobs:
                   // Kotlin and C# use local copies (see below).
               ].into_iter().collect();
 
-              let kotlin_query  = include_str!("../../kotlin_highlights.scm");
-              let csharp_query  = include_str!("../../csharp_highlights.scm");
+              let kotlin_query  = include_str!("../kotlin_highlights.scm");
+              let csharp_query  = include_str!("../csharp_highlights.scm");
 
               let mut all = queries;
               all.insert("kotlin", kotlin_query);
               all.insert("csharp", csharp_query);
 
               for (lang, query) in &all {
-                  let dir = format!("grammars/{lang}");
+                  let dir = format!("../grammars/{lang}");
                   fs::create_dir_all(&dir).unwrap();
                   fs::write(format!("{dir}/highlights.scm"), query).unwrap();
                   println!("Wrote {dir}/highlights.scm ({} bytes)", query.len());
