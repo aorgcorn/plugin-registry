@@ -56,11 +56,11 @@
     "name": ".NET Project Identity",
     "description": "Identifies .NET project types (WebAPI, MVC, Console, Worker) and metadata by deep-inspecting project files.",
     "author": "aorgcorn",
-    "version": "1.1.7",
+    "version": "1.1.8",
     "category": "Dev Tools",
     "activation_events": ["app_started", "onLspReady"],
-    "wasm_url": "https://github.com/adevcorn/chorograph-dotnet-plugin-rust/releases/download/v1.1.7/chorograph_dotnet_plugin_rust.wasm",
-    "sha256": "0abce8c47d786678d253c493b5e09a756f26da10eb67092db3263d75a121bdd0",
+    "wasm_url": "https://github.com/adevcorn/chorograph-dotnet-plugin-rust/releases/download/v1.1.8/chorograph_dotnet_plugin_rust.wasm",
+    "sha256": "1e3c1fe54247618dd8e09d727736babb2ee177c77d36eb0e67556d5cc88a8dee",
     "homepage_url": "https://github.com/adevcorn/chorograph-dotnet-plugin-rust",
     "min_chorograph_version": "1.0.0"
   }
