@@ -65,6 +65,19 @@
     "min_chorograph_version": "1.0.0"
   },
   {
+    "id": "com.chorograph.plugin.typescript-project",
+    "name": "TypeScript Project Identity",
+    "description": "Identifies TypeScript/JavaScript project types (Next.js, NestJS, Express, Fastify, Vite SPA, CLI App, Library) and maps entry points including API routes, pages, and exports.",
+    "author": "aorgcorn",
+    "version": "1.0.0",
+    "category": "Dev Tools",
+    "activation_events": ["app_started"],
+    "wasm_url": "https://github.com/adevcorn/chorograph-typescript-plugin/releases/download/v1.0.0/chorograph_typescript_plugin.wasm",
+    "sha256": "de6adac5ec7cc6c759a38a59570e79ac7e6ba2642febf73951dc194619a88dde",
+    "homepage_url": "https://github.com/adevcorn/chorograph-typescript-plugin",
+    "min_chorograph_version": "1.0.0"
+  },
+  {
     "id": "com.chorograph.plugin.dotnet-project",
     "name": ".NET Project Identity",
     "description": "Identifies .NET project types (WebAPI, MVC, Console, Worker) and metadata by deep-inspecting project files.",
