@@ -89,5 +89,18 @@
     "sha256": "1e3c1fe54247618dd8e09d727736babb2ee177c77d36eb0e67556d5cc88a8dee",
     "homepage_url": "https://github.com/adevcorn/chorograph-dotnet-plugin-rust",
     "min_chorograph_version": "1.0.0"
+  },
+  {
+    "id": "com.chorograph.plugin.openai-compatible",
+    "name": "OpenAI Compatible",
+    "description": "AI provider plugin for any OpenAI-compatible API (OpenAI, Ollama, LM Studio, vLLM, etc.). Configure base URL and API key in settings.",
+    "author": "aorgcorn",
+    "version": "1.0.0",
+    "category": "AI Provider",
+    "activation_events": ["app_started"],
+    "wasm_url": "https://github.com/aorgcorn/chorograph-openai-plugin/releases/download/v1.0.0/chorograph_openai_plugin_rust.wasm",
+    "sha256": "PLACEHOLDER",
+    "homepage_url": "https://github.com/aorgcorn/chorograph-openai-plugin",
+    "min_chorograph_version": "1.0.0"
   }
 ]
