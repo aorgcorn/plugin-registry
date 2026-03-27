@@ -99,7 +99,7 @@
     "category": "AI Provider",
     "activation_events": ["app_started"],
     "wasm_url": "https://github.com/aorgcorn/chorograph-openai-plugin/releases/download/v1.0.0/chorograph_openai_plugin_rust.wasm",
-    "sha256": "PLACEHOLDER",
+    "sha256": "b7b59af1728c638453226c9af8c0551e1cfd8df7dbc5bc51aa91ff2274231e2f",
     "homepage_url": "https://github.com/aorgcorn/chorograph-openai-plugin",
     "min_chorograph_version": "1.0.0"
   }
