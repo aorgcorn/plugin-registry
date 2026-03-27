@@ -95,11 +95,11 @@
     "name": "OpenAI Compatible",
     "description": "AI provider plugin for any OpenAI-compatible API (OpenAI, Ollama, LM Studio, vLLM, etc.). Configure base URL and API key in settings.",
     "author": "aorgcorn",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "category": "AI Provider",
     "activation_events": ["app_started"],
-    "wasm_url": "https://github.com/aorgcorn/chorograph-openai-plugin/releases/download/v1.0.2/chorograph_openai_plugin_rust.wasm",
-    "sha256": "db5a01f75ed0bb2b2f0fb6e4cb8b4011e9cd7ce79dee93767b5fe405b0dee321",
+    "wasm_url": "https://github.com/aorgcorn/chorograph-openai-plugin/releases/download/v1.0.3/chorograph_openai_plugin_rust.wasm",
+    "sha256": "13ee3a842731477587aa59c66fa669735eeaf4991a950ad5ae4949c28b3263f0",
     "homepage_url": "https://github.com/aorgcorn/chorograph-openai-plugin",
     "min_chorograph_version": "1.0.0"
   }
