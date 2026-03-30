@@ -20,13 +20,13 @@
     "name": "Gemini CLI",
     "description": "AI provider plugin that wraps the Gemini CLI tool, capturing its file-operation events and surfacing them in the Chorograph spatial visualiser.",
     "author": "aorgcorn",
-    "version": "1.0.9",
+    "version": "1.1.1",
     "category": "AI Provider",
     "activation_events": [
       "app_started"
     ],
-    "wasm_url": "https://github.com/aorgcorn/chorograph-gemini-cli-plugin/releases/download/v1.0.9/chorograph_gemini_cli_plugin_rust.wasm",
-    "sha256": "55d7f7bd0b6e69911c3cba01f4518856b852e755b7f0452a1273cc47e8666492",
+    "wasm_url": "https://github.com/aorgcorn/chorograph-gemini-cli-plugin/releases/download/v1.1.1/ChorographGeminiCLIPlugin.bundle.zip",
+    "sha256": "12740439abf650d07d7d7204ae363559b8ba5d6b2b406244853d9497ba925f4c",
     "homepage_url": "https://github.com/aorgcorn/chorograph-gemini-cli-plugin",
     "min_chorograph_version": "1.0.0"
   },
