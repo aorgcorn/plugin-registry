@@ -127,13 +127,13 @@
     "name": "OpenCode Terminal (experimental)",
     "description": "Experimental plugin that spawns opencode in a live PTY and renders it as a fully interactive terminal inside the Chorograph plugin UI panel.",
     "author": "aorgcorn",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "category": "AI Provider",
     "activation_events": [
       "app_started"
     ],
-    "wasm_url": "https://github.com/adevcorn/chorograph-opencode-cli-plugin-rust/releases/download/v0.1.3/chorograph_opencode_cli_plugin_rust.wasm",
-    "sha256": "dc2ea84ab7ac4c92dfb289a8bd5aaa4e1b2de6e2ccb055b3118cfd151d6335a7",
+    "wasm_url": "https://github.com/adevcorn/chorograph-opencode-cli-plugin-rust/releases/download/v0.1.4/chorograph_opencode_cli_plugin_rust.wasm",
+    "sha256": "06bb718423b23a69948bd62b0573b04f166f63eaadbac5d1e4c0b818ad450167",
     "homepage_url": "https://github.com/adevcorn/chorograph-opencode-cli-plugin-rust",
     "min_chorograph_version": "1.0.0"
   }
