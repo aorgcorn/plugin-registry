@@ -136,5 +136,20 @@
     "sha256": "b9d9901dba6d6e7c6adf693763b7acb2d38d33e1d5e6ba63997c3320233854f6",
     "homepage_url": "https://github.com/adevcorn/chorograph-opencode-cli-plugin-rust",
     "min_chorograph_version": "1.0.0"
+  },
+  {
+    "id": "com.chorograph.plugin.opencode-server",
+    "name": "OpenCode Server",
+    "description": "Launches opencode serve in the background and displays the server URL as a floating pill badge on the spatial canvas HUD.",
+    "author": "adevcorn",
+    "version": "0.1.0",
+    "category": "AI Provider",
+    "activation_events": [
+      "app_started"
+    ],
+    "wasm_url": "https://github.com/adevcorn/chorograph-opencode-server-plugin-rust/releases/download/v0.1.0/chorograph_opencode_server_plugin_rust.wasm",
+    "sha256": "e49b73e97ff9e3b5173c1484292f61efd80036bbd2156e624381fc0deb2eb033",
+    "homepage_url": "https://github.com/adevcorn/chorograph-opencode-server-plugin-rust",
+    "min_chorograph_version": "1.0.0"
   }
 ]
