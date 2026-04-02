@@ -1,21 +1,5 @@
 [
   {
-    "id": "com.chorograph.plugin.opencode-server",
-    "name": "OpenCode Server",
-    "description": "AI provider plugin that connects to a running OpenCode server via its JSON-RPC/SSE API, streaming live file read/write events into the Chorograph visualiser.",
-    "author": "aorgcorn",
-    "version": "1.0.6",
-    "category": "AI Provider",
-    "activation_events": [
-      "app_started",
-      "onOpenCodeEvent"
-    ],
-    "wasm_url": "https://github.com/aorgcorn/chorograph-opencode-server-plugin/releases/download/v1.0.6/opencode_server_plugin.wasm",
-    "sha256": "3752bb183a516dddd60a4dc68257790543d3f92579f0b9c46f8a9f814b1732e9",
-    "homepage_url": "https://github.com/aorgcorn/chorograph-opencode-server-plugin",
-    "min_chorograph_version": "1.0.0"
-  },
-  {
     "id": "com.chorograph.plugin.gemini-cli",
     "name": "Gemini CLI",
     "description": "AI provider plugin that wraps the Gemini CLI tool, capturing its file-operation events and surfacing them in the Chorograph spatial visualiser.",
