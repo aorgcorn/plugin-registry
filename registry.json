@@ -139,7 +139,7 @@
   },
   {
     "id": "com.chorograph.plugin.opencode-server",
-    "name": "OpenCode Server",
+    "name": "OpenCode Server Launcher",
     "description": "Launches opencode serve in the background and displays the server URL as a floating pill badge on the spatial canvas HUD.",
     "author": "adevcorn",
     "version": "0.1.1",
