@@ -131,7 +131,7 @@
     "activation_events": [
       "app_started"
     ],
-    "wasm_url": "https://github.com/adevcorn/chorograph-opencode-server-plugin-rust/releases/download/v0.1.1/plugin.wasm",
+    "wasm_url": "https://github.com/adevcorn/chorograph-opencode-server-plugin-rust/releases/download/v0.1.1/chorograph_opencode_server_plugin_rust.wasm",
     "sha256": "0ede303041ae5278d461532e5a81517e7557aafc4c1dc9ad631f3943566c36ef",
     "homepage_url": "https://github.com/adevcorn/chorograph-opencode-server-plugin-rust",
     "min_chorograph_version": "1.0.0"
