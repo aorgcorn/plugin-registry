@@ -135,5 +135,20 @@
     "sha256": "cce64186e04d148dbf9c96d095b501c9e150f09f6451df2815da3bbe13e3c8a8",
     "homepage_url": "https://github.com/adevcorn/chorograph-opencode-server-plugin-rust",
     "min_chorograph_version": "1.0.0"
+  },
+  {
+    "id": "com.chorograph.plugin.github-actions",
+    "name": "GitHub Actions",
+    "description": "Polls GitHub Actions workflow runs via the gh CLI and surfaces live CI status as amber glass panels on the spatial map, connected by bezier lines to the workflow .yml file dots. Toggle with ⌘W.",
+    "author": "adevcorn",
+    "version": "0.1.0",
+    "category": "Dev Tools",
+    "activation_events": [
+      "app_started"
+    ],
+    "wasm_url": "https://github.com/adevcorn/chorograph-github-actions-plugin-rust/releases/download/v0.1.0/chorograph_github_actions_plugin_rust.wasm",
+    "sha256": "aac4f9041979ae40366c00f77ce56e2a0c24f085635fcc96c94abdc8bd55627c",
+    "homepage_url": "https://github.com/adevcorn/chorograph-github-actions-plugin-rust",
+    "min_chorograph_version": "1.0.0"
   }
 ]
