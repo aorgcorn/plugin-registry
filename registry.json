@@ -139,15 +139,15 @@
   {
     "id": "com.chorograph.plugin.github-actions",
     "name": "GitHub Actions",
-    "description": "Polls GitHub Actions workflow runs via the gh CLI and surfaces live CI status as amber glass panels on the spatial map, connected by bezier lines to the workflow .yml file dots. Toggle with ⌘W.",
+    "description": "Polls GitHub Actions workflow runs and open PRs via the gh CLI and surfaces live CI status as amber glass panels and a violet PR card on the spatial map. Toggle CI with ⌘W, PRs with ⌘R.",
     "author": "adevcorn",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "category": "Dev Tools",
     "activation_events": [
       "app_started"
     ],
-    "wasm_url": "https://github.com/adevcorn/chorograph-github-actions-plugin-rust/releases/download/v0.1.1/chorograph_github_actions_plugin_rust.wasm",
-    "sha256": "02da2e6a668d62efd3227fe80a3cd85b6cb49079bd760b986b47ccfff427a51d",
+    "wasm_url": "https://github.com/adevcorn/chorograph-github-actions-plugin-rust/releases/download/v0.1.2/chorograph_github_actions_plugin_rust.wasm",
+    "sha256": "a17f05ac3993b1a15a0fbfb7cd7c3b3928fc9d9e917cdfb13d6109f5338949fb",
     "homepage_url": "https://github.com/adevcorn/chorograph-github-actions-plugin-rust",
     "min_chorograph_version": "1.0.0"
   }
