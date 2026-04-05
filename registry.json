@@ -140,6 +140,22 @@
     "provides": ["serverLifecycle", "serverStatus"]
   },
   {
+    "id": "com.chorograph.plugin.ui-preview",
+    "name": "UI Preview",
+    "description": "Detects SwiftUI (`: View`) and React/TSX components in workspace source files and renders a visual colour-coded component tree as a spatial canvas overlay node. Toggle with ⌘U.",
+    "author": "adevcorn",
+    "version": "0.1.0",
+    "category": "Dev Tools",
+    "activation_events": [
+      "onLspReady"
+    ],
+    "wasm_url": "https://github.com/adevcorn/chorograph-ui-preview-plugin-rust/releases/download/v0.1.0/chorograph_ui_preview_plugin_rust.wasm",
+    "sha256": "b71c6019d115028f1c18e6ea1d8c7de8b5ec697e7440f1a3e4aa010366112e47",
+    "homepage_url": "https://github.com/adevcorn/chorograph-ui-preview-plugin-rust",
+    "min_chorograph_version": "1.0.0",
+    "provides": ["uiPreview"]
+  },
+  {
     "id": "com.chorograph.plugin.github-actions",
     "name": "GitHub Actions",
     "description": "Polls GitHub Actions workflow runs and open PRs via the gh CLI and surfaces live CI status as amber glass panels and a violet PR card on the spatial map. Toggle CI with ⌘W, PRs with ⌘R.",
