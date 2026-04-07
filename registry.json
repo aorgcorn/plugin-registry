@@ -144,13 +144,13 @@
     "name": "UI Preview",
     "description": "Detects SwiftUI (`: View`) and React/TSX components in workspace source files and renders a visual colour-coded component tree as a spatial canvas overlay node. Toggle with ⌘U.",
     "author": "adevcorn",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "category": "Dev Tools",
     "activation_events": [
       "onLspReady"
     ],
-    "wasm_url": "https://github.com/adevcorn/chorograph-ui-preview-plugin-rust/releases/download/v0.1.2/chorograph_ui_preview_plugin_rust.wasm",
-    "sha256": "764cf30482b4820b9b206fc4bcf03c5f541155082c90ea78cabd5ea5711a1d36",
+    "wasm_url": "https://github.com/adevcorn/chorograph-ui-preview-plugin-rust/releases/download/v0.1.3/chorograph_ui_preview_plugin_rust.wasm",
+    "sha256": "1fd553e8dc273ce7804f79e60e0df33d107186f66a0ff32d866d65a49fdcdf44",
     "homepage_url": "https://github.com/adevcorn/chorograph-ui-preview-plugin-rust",
     "min_chorograph_version": "1.0.0",
     "provides": ["uiPreview"]
